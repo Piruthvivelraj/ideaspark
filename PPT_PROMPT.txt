@@ -1,0 +1,196 @@
+Create a professional PowerPoint presentation for a student hackathon project called "IdeaSpark".
+Use a dark theme with deep navy/dark purple background (#0D0D1F), vibrant violet (#8B5CF6) and pink (#F472B6) accent colors, and white text.
+Use modern, clean slide layouts with subtle gradient accents. Total slides: 8.
+
+=======================================================================
+SLIDE 1 — TITLE SLIDE
+=======================================================================
+Title: IdeaSpark
+Subtitle: AI-Powered Project Idea Generator for Students
+Tagline: "From zero to idea in seconds — powered by Groq AI"
+Add a glowing lightning bolt icon or spark graphic in the center.
+Bottom: Hackathon Project | 2025
+
+=======================================================================
+SLIDE 2 — PROBLEM STATEMENT
+=======================================================================
+Title: The Problem
+Content (use icons or bullet points with visuals):
+- Students struggle to find meaningful project ideas that match their skills
+- Generic idea lists don't consider individual goals, timelines, or tech preferences
+- Repeating the same overused project ideas (todo apps, weather apps) adds no value
+- No personalized guidance on tech stack or difficulty level
+- Hackathon participants waste hours brainstorming instead of building
+
+Highlight quote (large text in center):
+"Students spend more time finding an idea than actually building one."
+
+=======================================================================
+SLIDE 3 — CORE PRINCIPLES / OUR SOLUTION
+=======================================================================
+Title: Our Solution — IdeaSpark
+Use a 3-column or 2x3 grid layout with icons:
+
+1. 🎯 Personalized Matching
+   Answers 8 questions to understand the user's exact needs
+
+2. 🤖 AI-Generated Ideas
+   Groq AI (Llama 3.3) generates 15 unique ideas per session
+
+3. 🔁 No Repeats Ever
+   Seen ideas are tracked per user across sessions
+
+4. 📋 Detailed Breakdown
+   Every idea includes tech stack, flow, features, and difficulty
+
+5. 💾 Save & Track
+   Bookmark ideas and monitor progress on a personal dashboard
+
+6. 🔓 Open to All
+   Works for any domain, skill level, timeline, and team size
+
+=======================================================================
+SLIDE 4 — TECH STACK
+=======================================================================
+Title: Tech Stack
+Use a split layout — Frontend on left, Backend on right, Database at bottom center.
+
+FRONTEND:
+- React.js — UI components and routing
+- Tailwind CSS — Utility-first styling
+- Framer Motion — Animations and transitions
+- Axios — API communication
+- React Router DOM — Page navigation
+
+BACKEND:
+- Node.js — Server runtime
+- Express.js — REST API framework
+- JWT — Secure authentication
+- bcryptjs — Password hashing
+- Groq SDK — AI idea generation (Llama 3.3-70b)
+
+DATABASE:
+- MongoDB (local / Atlas) — NoSQL document storage
+- Mongoose — Schema modeling
+
+Add logos or colored badges for each technology.
+
+=======================================================================
+SLIDE 5 — WORKING FLOW
+=======================================================================
+Title: How It Works
+Use a horizontal flowchart or numbered step diagram with arrows:
+
+Step 1 → Register / Login
+         (Secure auth with bcrypt + JWT)
+
+Step 2 → Answer 8 Questions
+         (Domain, Difficulty, Goal, Team, Timeline,
+          Tech, Output Type, Custom Requirement)
+
+Step 3 → AI Generates 15 Ideas
+         (Groq Llama 3.3 — tailored to all 8 answers,
+          no repeated ideas across sessions)
+
+Step 4 → Browse Idea Cards
+         (Animated cards with typewriter effect,
+          difficulty glow, tech stack chips)
+
+Step 5 → View Project Detail
+         (Full flow, key features, tech stack,
+          difficulty meter, timeline, team size)
+
+Step 6 → Save & Dashboard
+         (Bookmark ideas, track domains explored,
+          view stats on personal dashboard)
+
+=======================================================================
+SLIDE 6 — KEY FEATURES (DEMO HIGHLIGHTS)
+=======================================================================
+Title: Key Features
+Use a 2x2 or 2x3 card grid layout:
+
+🧙 Conversational Wizard
+8-step animated wizard with "Other" option on every question
+for fully custom inputs
+
+✨ AI-First Generation
+Groq generates all 15 ideas — dataset is only a fallback.
+Ideas are unique every session.
+
+🃏 Animated Idea Cards
+Staggered entrance, typewriter description, difficulty-colored
+glow on hover, save and copy actions
+
+📄 Project Detail Page
+6-step project flow, domain-specific key features,
+tech stack list, difficulty meter visual
+
+📊 Personal Dashboard
+Stat counters (saved, domains, difficulty breakdown),
+recent ideas, domain bar chart
+
+💬 Feedback System
+Users can submit queries, bug reports, and feature requests
+directly from the app
+
+=======================================================================
+SLIDE 7 — DATABASE DESIGN
+=======================================================================
+Title: Database Design (MongoDB)
+Use 3 styled table/card blocks side by side:
+
+Collection: users
+Fields: _id, name, email, password (hashed), createdAt
+
+Collection: ideas (saved)
+Fields: _id, userId, title, description, techStack[ ],
+        difficulty, domain, savedAt
+
+Collection: seenideas
+Fields: _id, userId, domain, title, seenAt
+Purpose: Prevents showing repeated ideas to the same user
+
+Collection: feedbacks
+Fields: _id, name, email, type, message, createdAt
+
+Add a small note: "All collections stored in MongoDB Atlas (cloud) or localhost"
+
+=======================================================================
+SLIDE 8 — CONCLUSION & FUTURE SCOPE
+=======================================================================
+Title: Conclusion & Future Scope
+
+LEFT — What We Built:
+- Full-stack web app with secure auth
+- AI-powered personalized project idea generator
+- 8-question wizard with custom input support
+- No-repeat idea tracking per user
+- Detailed project breakdown with flow and tech stack
+- Personal dashboard and saved ideas
+- Feedback system
+
+RIGHT — Future Scope:
+- 🌍 Multi-language support
+- 📤 Export ideas as PDF or share link
+- 👥 Team collaboration and idea voting
+- 🔔 Email notifications for new idea suggestions
+- 📱 Mobile app version (React Native)
+- 🏆 Leaderboard for most saved ideas
+
+Bottom center closing line (large, gradient text):
+"IdeaSpark — Turning curiosity into code."
+
+=======================================================================
+DESIGN NOTES FOR THE PPT TOOL / DESIGNER:
+=======================================================================
+- Background: #0D0D1F (dark navy) on all slides
+- Primary accent: #8B5CF6 (violet)
+- Secondary accent: #F472B6 (pink)
+- Text: White (#FFFFFF) for headings, #D1D5DB for body
+- Cards/boxes: Semi-transparent dark purple with violet border
+- Font: Inter or Poppins — Bold for headings, Regular for body
+- Add subtle animated gradient or glow effects on title slide
+- Use icons from Lucide or Heroicons style throughout
+- Slide transitions: Fade or slide-in from right
+=======================================================================
