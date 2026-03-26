@@ -5,14 +5,6 @@ import api from '../api/axios';
 import { useAuth } from '../context/AuthContext';
 import { Bookmark, Zap, Globe, BarChart2, ArrowRight, Clock } from 'lucide-react';
 
-const domainColors = {
-  'Artificial Intelligence': 'from-purple-500/30 to-blue-500/30 border-purple-500/30',
-  'Web Development': 'from-blue-500/30 to-cyan-500/30 border-blue-500/30',
-  'IoT': 'from-green-500/30 to-teal-500/30 border-green-500/30',
-  'Mobile Application Development': 'from-orange-500/30 to-pink-500/30 border-orange-500/30',
-  'Cybersecurity': 'from-red-500/30 to-rose-500/30 border-red-500/30',
-};
-
 const domainIcons = {
   'Artificial Intelligence': '🤖',
   'Web Development': '🌐',

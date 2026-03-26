@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Layers, Brain, ShieldCheck, Smartphone, Globe, ArrowRight, Sparkles, Star, MessageSquare } from 'lucide-react';
+import { Zap, Layers, Brain, ShieldCheck, ArrowRight, Sparkles, Star, MessageSquare } from 'lucide-react';
 
 const features = [
   { icon: <Brain className="w-6 h-6" />, title: 'AI-Powered Ideas', desc: 'Groq AI generates a unique project idea tailored exactly to your preferences in seconds.', color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30' },
