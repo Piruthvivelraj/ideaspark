@@ -11,7 +11,8 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:3000',
-  process.env.CLIENT_URL, // your Vercel URL
+  'https://ideaspark-st57-esi53ge12-piruthvivelrajs-projects.vercel.app',
+  process.env.CLIENT_URL,
 ].filter(Boolean);
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
