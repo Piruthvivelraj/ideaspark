@@ -9,13 +9,16 @@ const feedbackRoutes = require('./routes/feedback');
 
 const app = express();
 
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://ideaspark-st57-esi53ge12-piruthvivelrajs-projects.vercel.app',
-  process.env.CLIENT_URL,
-].filter(Boolean);
-
-app.use(cors({ origin: allowedOrigins, credentials: true }));
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || origin === 'http://localhost:3000' || origin.includes('vercel.app') || origin === process.env.CLIENT_URL) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
